@@ -228,3 +228,14 @@ p { margin: 0 0 16px; color: var(--text); }
   margin: 4px 0;
   font-size: 1rem;
 }
+/* === 10) Keep footer at bottom on short pages === */
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+footer.footer {
+  margin-top: auto;
+}
