@@ -223,7 +223,8 @@ p {
  }
 .btn:hover { 
     background: #146c43;  
-    border-color: #146c43;  
+    border-color: #146c43;
+    color: #ffffff;
  }
 .btn--full { 
     width: 100%; 
