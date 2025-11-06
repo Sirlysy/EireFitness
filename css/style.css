@@ -1,4 +1,4 @@
-* 
+/* 
   Eire Fitness -  Stylesheet 
   This code is used to define the visual design for all pages in a consistent way.
   - We use Bootstrap GRID ONLY (container/row/col-*) to stay under 30% framework usage.
@@ -369,4 +369,16 @@ p {
 .footer p {
     margin: 4px 0;
     font-size: 1rem;
+}
+
+/* 10) Keep footer at bottom on short pages */
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+footer.footer {
+  margin-top: auto;
 }
