@@ -283,6 +283,9 @@ p {
 }
 
 /*  6) Tables used on Classes page */
+.table_filter{
+  margin-top: 70px;
+}
 .table {
   /* This code is used to style a simple schedule table */
     width: 100%; 
