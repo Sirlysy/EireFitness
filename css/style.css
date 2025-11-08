@@ -231,6 +231,31 @@ p {
     padding: 12px 18px; 
 }
 
+/* === Testimonials Section === */
+.testimonials {
+  background: #ffffff; /* white panel background */
+}
+.testimonial-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb; /* light grey border */
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  padding: 24px;
+  height: 100%;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.testimonial-text {
+  font-style: italic;
+  color: #6b7280; /* muted grey */
+  margin-bottom: 16px;
+}
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 /* 5) Cards and utilities  */
 .card {
   /* This code is used to show content blocks as panels */
@@ -279,6 +304,10 @@ p {
 }
 .table tr:last-child td { 
     border-bottom: 0; 
+}
+.table tbody tr:hover {
+  background: #e9f7ef;
+  transition: background 0.3s ease;
 }
 .hidden { 
     display: none !important; 
