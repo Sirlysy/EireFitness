@@ -52,6 +52,8 @@ body {
     color: #1f2937;
     background: #f3f5f7; 
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
 }
 
 /* This code is used to keep the site at a readable width */
@@ -169,10 +171,11 @@ p {
 .hero {
   /* This code is used to display a static banner image with readable overlay text */
     position: relative; 
-    height: 56vh; 
+    height: 86vh; 
     min-height: 360px; 
-    background: #000; 
+    background: #111827; 
     overflow: hidden;
+    flex-shrink: 0;
 }
 .hero__img {
   /* This code is used to cover the hero area with the image */
@@ -183,23 +186,31 @@ p {
 }
 .hero__caption {
   /* This code is used to show headline text over the image */
-    position: absolute; 
-    left: 6%; 
-    bottom: 12%;
-    background: rgba(0,0,0,.35); 
-    color: #fff; 
-    padding: 20px 24px;
+    position: relative;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
     max-width: 560px; 
-    border-radius: 10px; 
-    box-shadow: 0 8px 20px rgba(0,0,0,0.06); 
 }
 .hero__title { 
-    margin: 0 0 8px; 
+    margin: 0 0 8px;
+    text-align: center;
     color: #fff; 
-    font-size: 2rem;
+    font-size: 3.5rem;
  }
 .hero__text { 
-    margin: 0 0 16px; 
+    margin: 0 0 16px;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600; 
+    color: #f9fafb; 
+}
+.hero__buttons { 
+    margin: 0 0 16px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
     color: #f9fafb; 
 }
 
@@ -220,12 +231,22 @@ p {
 .btn--ghost { 
     background: transparent; 
     color: #198754; 
- }
+}
 .btn:hover { 
     background: #146c43;  
     border-color: #146c43;
     color: #ffffff;
- }
+}
+ .btn--hero { 
+    background: transparent; 
+    border: 2px solid #ffffff;
+    color: #ffffff; 
+}
+ .btn--hero:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: #146c43;
+}
 .btn--full { 
     width: 100%; 
     padding: 12px 18px; 
@@ -404,13 +425,6 @@ p {
 }
 
 /* 10) Keep footer at bottom on short pages */
-html, body {
-  height: 100%;
-}
-body {
-  display: flex;
-  flex-direction: column;
-}
 footer.footer {
   margin-top: auto;
 }
