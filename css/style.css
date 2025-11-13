@@ -59,6 +59,8 @@ body {
 /* This code is used to keep the site at a readable width */
 .container {
     max-width: 1200px; /* Center column width on large screens */
+    padding: 28px;
+    justify-content: space-evenly;
 }
 
 /* This code is used to create consistent spacing for sections */
@@ -67,6 +69,9 @@ body {
 }
 .section--light { 
     background: #f3f5f7; 
+}
+.section--blue { 
+    background: #1f2937;
 }
 .section--panel { 
     background: #ffffff; 
@@ -192,6 +197,7 @@ p {
     transform: translate(-50%, -50%);
     color: #fff;
     max-width: 560px; 
+    padding: 32px;
 }
 .hero__title { 
     margin: 0 0 8px;
@@ -237,12 +243,12 @@ p {
     border-color: #146c43;
     color: #ffffff;
 }
- .btn--hero { 
+.btn--hero { 
     background: transparent; 
     border: 2px solid #ffffff;
     color: #ffffff; 
 }
- .btn--hero:hover {
+.btn--hero:hover {
     background: #ffffff;
     border-color: #ffffff;
     color: #146c43;
@@ -284,8 +290,38 @@ p {
     border: 1px solid #e5e7eb; 
     border-radius: 10px;   
     padding: 20px; 
-    box-shadow: 0 8px 20px rgba(0,0,0,0.06); 
-    height: 100%;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    height: 100%; 
+}
+.card img {
+  height: auto;
+  display: block;
+}
+.image-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  display: inline-block;
+  max-width: 400px;
+  vertical-align: top;
+}
+.image-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+.data-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  display: inline-block; 
+  padding: 20px; 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;  
+  text-align: center;
+  font-weight: 500;
 }
 .center { 
     text-align: center; 
